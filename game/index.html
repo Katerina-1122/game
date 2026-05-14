@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蜜蜂授粉</title>
+    <link rel="preload" href="click.mp3" as="fetch" type="audio/mpeg" />
+    <link rel="preload" href="errorse.mp3" as="fetch" type="audio/mpeg" />
+    <link rel="preload" href="rightse.mp3" as="fetch" type="audio/mpeg" />
+    <link rel="preload" href="winse.mp3" as="fetch" type="audio/mpeg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <main class="scene" aria-label="遊戲場景">
+        <img
+          id="flower-a"
+          class="sprite sprite--flower sprite--flower-a"
+          src="flower1.png"
+          alt="花 1"
+          width="140"
+          height="140"
+        />
+        <img
+          id="ok-a"
+          class="pollen-mark pollen-mark--a"
+          src="ok.png"
+          alt=""
+          width="48"
+          height="48"
+          hidden
+        />
+        <img
+          id="flower-b"
+          class="sprite sprite--flower sprite--flower-b"
+          src="Flower-4.png"
+          alt="花 2"
+          width="140"
+          height="140"
+        />
+        <img
+          id="ok-b"
+          class="pollen-mark pollen-mark--b"
+          src="ok.png"
+          alt=""
+          width="48"
+          height="48"
+          hidden
+        />
+        <img
+          id="dragonfly"
+          class="sprite sprite--dragonfly"
+          src="dragonfly.png"
+          alt="蜻蜓"
+          width="110"
+          height="110"
+        />
+        <img
+          id="scallion"
+          class="sprite sprite--scallion"
+          src="scallion.png"
+          alt="蔥"
+          width="100"
+          height="100"
+        />
+        <img
+          id="berry"
+          class="sprite sprite--berry"
+          src="berry.png"
+          alt="草莓"
+          width="95"
+          height="95"
+        />
+        <img
+          id="bee"
+          class="sprite sprite--bee"
+          src="bee.png"
+          alt="蜜蜂"
+          width="120"
+          height="120"
+        />
+
+        <div
+          id="pollen-success"
+          class="pollen-success"
+          role="status"
+          aria-live="polite"
+          hidden
+        >
+          授粉成功
+        </div>
+
+        <section class="controls" id="controls" aria-label="方向控制">
+          <div class="direction-pad" id="direction-pad">
+            <button type="button" class="dir dir--up" data-dir="up" aria-label="上">
+              <img src="arrow.png" alt="" class="dir-icon dir-icon--up" />
+            </button>
+            <button type="button" class="dir dir--left" data-dir="left" aria-label="左">
+              <img src="arrow.png" alt="" class="dir-icon dir-icon--left" />
+            </button>
+            <button type="button" class="dir dir--right" data-dir="right" aria-label="右">
+              <img src="arrow.png" alt="" class="dir-icon dir-icon--right" />
+            </button>
+            <button type="button" class="dir dir--down" data-dir="down" aria-label="下">
+              <img src="arrow.png" alt="" class="dir-icon dir-icon--down" />
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
